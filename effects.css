@@ -1,0 +1,504 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif, Georgia;
+  font-size: 16px;
+  margin-left: 1.3rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.box-shadow {
+  width: 10rem;
+  height: 10rem;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 4rem 0;
+  margin: 1rem auto;
+  background-color: navy;
+  color: #90b;
+  box-shadow: 1rem 1rem 1rem 1rem #0f06, 2rem 2rem 1rem 1rem #000,
+    1rem 1rem 1rem 1rem #00f8 inset;
+}
+
+.ass {
+  color: #90b;
+}
+
+.text-shadow {
+  text-align: justify;
+  margin: 0 auto;
+  text-shadow: -0.25rem -0.25rem 0.25rem #0f0;
+}
+
+.transparent {
+  color: #f00;
+}
+
+.transparent img {
+  width: 300px;
+  height: 300px;
+  filter: drop-shadow(2rem 2rem 0.5rem);
+}
+
+.shadows-multiples {
+  width: 10rem;
+  height: 10rem;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 4rem 0;
+  margin: 1rem auto;
+  background-color: navy;
+  color: rgb(255, 255, 255);
+  box-shadow: 1rem 1rem 1rem 1rem #000, -1rem -1rem 1rem 1rem #000;
+}
+
+.linear {
+  width: 10rem;
+  height: 10rem;
+  border: thick solid #000;
+  margin: 1.5rem auto 0;
+}
+
+.linear-1 {
+  background-image: linear-gradient(red, green, blue);
+}
+
+.linear-2 {
+  background-image: linear-gradient(red 40%, green 40% 80%, blue 80%);
+}
+
+.linear-3 {
+  background-image: linear-gradient(-45deg, red 40%, green 40% 80%, blue 80%);
+}
+
+.linear-4 {
+  background-image: linear-gradient(
+    to top right,
+    red 0 40%,
+    green 40% 80%,
+    blue 80%
+  );
+}
+
+.linear-5 {
+  background-image: linear-gradient(
+    135deg,
+    cyan 20%,
+    magenta 40%,
+    yellow 60%,
+    red 80%,
+    skyblue
+  );
+}
+
+.radial {
+  width: 1000px;
+  height: 10rem;
+  border: thick solid #000;
+  margin: 1.5rem auto 0;
+}
+
+.radial-1 {
+  background-image: radial-gradient(orange, lightskyblue, yellow, red, gray);
+}
+
+.radial-2 {
+  background-image: radial-gradient(
+    cyan 40%,
+    magenta 40% 60%,
+    yellow 60% 80%,
+    red 80%
+  );
+}
+
+.radial-3 {
+  background-image: radial-gradient(
+    ellipse 50% 100px at top center,
+    red 30%,
+    white 30%
+  );
+}
+
+.radial-4 {
+  background-image: radial-gradient(
+    circle 4rem,
+    red 50%,
+    cyan 50% 70%,
+    yellow 70%
+  );
+}
+
+.radial-5 {
+  background-image: radial-gradient(
+    ellipse 3rem at center,
+    red 0 30%,
+    green 30% 60%,
+    blue 60% 80%,
+    magenta 80%
+  );
+}
+
+.radial-6 {
+  background-image: radial-gradient(
+    circle 100px at bottom right,
+    red 50%,
+    rgb(123, 255, 0) 70%,
+    blue 90%,
+    gray
+  );
+}
+
+.conic {
+  width: 10rem;
+  height: 10rem;
+  border: thick solid #000;
+  margin: 1.5rem auto 0;
+}
+
+.conic-1 {
+  background-image: conic-gradient(red, yellow, orange);
+}
+
+.conic-2 {
+  background-image: conic-gradient(lightgreen 30%, pink 60%, violet 80%);
+}
+
+.conic-3 {
+  background-image: conic-gradient(
+    cyan 0 20%,
+    magenta 20% 40%,
+    yellow 40% 60%,
+    skyblue 60% 80%,
+    lightyellow 80%
+  );
+}
+
+.conic-4 {
+  background-image: conic-gradient(
+    red 45deg,
+    pink 45deg 90deg,
+    brown 90deg 120deg,
+    lightblue 120deg 210deg,
+    darkblue 210deg 360deg
+  );
+}
+
+.conic-5 {
+  background-image: conic-gradient(
+    from 180deg,
+    red 50%,
+    yellow 50% 75%,
+    pink 75%
+  );
+}
+
+.conic-6 {
+  background-image: conic-gradient(from 90deg, blue 0 50%, red 50%);
+}
+
+.caja {
+  width: 10rem;
+  height: 10rem;
+  border: thick solid #000;
+  margin: 1.5rem auto 0;
+}
+
+.patron-1 {
+  background-image: repeating-linear-gradient(
+    red 0 10px,
+    green 10px 20px,
+    blue 20px 30px
+  );
+}
+
+.patron-2 {
+  background-image: repeating-radial-gradient(
+    skyblue 0 10px,
+    lightgreen 10px 20px,
+    violet 20px 30px
+  );
+}
+
+.patron-3 {
+  background-image: repeating-conic-gradient(
+    cyan 0 8%,
+    magenta 8% 16%,
+    yellow 16% 24%
+  );
+}
+
+.pastel,
+.dona,
+.pokeball {
+  width: 10rem;
+  height: 10rem;
+  border: thick solid #000;
+  margin: 1.5rem auto 0;
+}
+
+.pastel {
+  background-image: conic-gradient(
+    from 180deg,
+    cyan 0 50%,
+    magenta 50% 80%,
+    yellow 80%
+  );
+  border-radius: 50%;
+}
+
+.dona {
+  background-image: radial-gradient(white 20%, #000 20% 22%, transparent 25%),
+    conic-gradient(from 180deg, darkblue 0 50%, orange 50% 80%, darkgreen 80%);
+  border-radius: 50%;
+}
+
+.pokeball {
+  background-image: radial-gradient(
+      circle,
+      #fff 0 20%,
+      #000 20% 23%,
+      transparent 23% 25%
+    ),
+    linear-gradient(#f00 0 47%, #000 47% 53%, #fff 53%);
+  border-radius: 50%;
+}
+
+.filters img {
+  width: 15rem;
+  height: 10rem;
+  filter: drop-shadow(0 0 0);
+}
+
+.filters img:first-of-type {
+  filter: blur(1rem);
+}
+
+.filters img:nth-of-type(2) {
+  filter: brightness(50);
+}
+
+.filters img:nth-of-type(3) {
+  filter: contrast(30);
+}
+
+.filters img:nth-of-type(4) {
+  filter: opacity(0.5);
+}
+
+.filters img:nth-of-type(5) {
+  filter: invert(0.8);
+}
+
+.filters img:nth-of-type(6) {
+  filter: grayscale(0.6);
+}
+
+.filters img:nth-of-type(7) {
+  filter: sepia(0.7);
+}
+
+.filters img:nth-of-type(8) {
+  filter: saturate(50);
+}
+
+.filters img:nth-of-type(9) {
+  filter: hue-rotate(120deg);
+}
+
+.filters img:last-of-type {
+  filter: drop-shadow(4rem 4rem 4rem #000) drop-shadow(-4rem -4rem 4rem #000);
+}
+
+.filters-multiple {
+  width: 15rem;
+  height: 10rem;
+  filter: drop-shadow(0 0 0) opacity(0.5) blur(1rem) sepia(0.5);
+}
+
+.back-1 {
+  width: 20rem;
+  height: 10rem;
+  margin-bottom: 1rem;
+  border: thick solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/paisaje-natural.jpg);
+}
+
+.back-1 > p {
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  backdrop-filter: saturate(80) hue-rotate(210deg) invert(0.9);
+  background-color: #00f6;
+}
+
+.back-2 {
+  width: 20rem;
+  height: 10rem;
+  margin-bottom: 1rem;
+  border: thick solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #90b;
+}
+
+.back-2 > p {
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  line-height: 5rem;
+  backdrop-filter: hue-rotate(200deg);
+  background-color: #00f6;
+}
+
+.dark-mode {
+  background-color: #fff;
+  color: #000;
+  filter: invert(1);
+}
+
+.dark-mode img {
+  filter: invert(1);
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  width: 15rem;
+  height: 10rem;
+  left: 0;
+  top: 0;
+}
+
+.blend-mode-2 {
+  z-index: 25;
+}
+
+.blend-mode {
+  width: 15rem;
+  height: 10rem;
+  z-index: 50;
+  mix-blend-mode: overlay;
+}
+
+.background-blend-mode-2 {
+  z-index: 60;
+  background-image: url("img/paisaje-digital-en-atardecer_2560x1440_xtrafondos.com.jpg");
+}
+
+.background-blend-mode {
+  width: 15rem;
+  height: 10rem;
+  background-image: url("img/paisaje-natural.jpg"), 
+    url("img/abstract-1278077_1920.jpg"), 
+    url("img/colorful-neon-light-background-free-vector.jpg");
+  background-blend-mode: color-dodge;
+  z-index: 80;
+}
+
+.clip {
+  width: 15rem;
+  height: 10rem;
+  display: block;
+  margin-top: 1rem;
+}
+
+.forma-1,
+.forma-2,
+.forma-3 {
+  display: inline-block;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.circle {
+  clip-path: circle(4rem at left bottom);
+}
+
+.inset-round {
+  clip-path: inset(1rem round 25% 25% 25% 25%);
+}
+
+.ellipse {
+  clip-path: ellipse(3rem 5rem at top right);
+}
+
+.polygon {
+  clip-path: polygon(50% 0%, 68% 70%, 82% 100%, 23% 88%, 0% 38%);
+}
+
+.contenedor {
+  background-color: aliceblue;
+  border: thick solid #000;
+  width: 50rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+.contenedor p {
+  margin: 1rem 1rem 0 1rem;
+  text-align: justify;
+}
+
+.contenedor .figure {
+  clip-path: circle();
+}
+
+.contenedor img {
+  width: 20rem;
+  height: 10rem;
+}
+
+.contenedor .forma-1 {
+  shape-outside: circle(70%);
+}
+
+.contenedor .forma-2 {
+  shape-outside: url(img/imagenes-png.png);
+}
+
+.contenedor .forma-3 {
+  shape-outside: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.mexico {
+  display: flex;
+  position: relative;
+  border: thick solid #000;
+  margin: 0 auto;
+  width: 15rem;
+  height: 10rem;
+  background-image: linear-gradient(
+    to right,
+    darkgreen 0 33%,
+    white 33% 66%,
+    red 66%
+  );
+}
+
+.mexico img {
+  position: absolute;
+  top: 45px;
+  left: 79px;
+  width: 30%;
+  height: 45%;
+  filter: drop-shadow(0 0 0);
+  flex-align: center;
+}

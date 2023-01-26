@@ -1,0 +1,54 @@
+.sticky {
+  background-color: rgb(127, 0, 246);
+  color: rgb(255, 255, 255);
+  position: sticky;
+  width: 100%;
+  height: 50px;
+  top: -5px;
+  z-index: 999;
+}
+
+.sticky li {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 300px;
+  padding: 4px;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.slider {
+  width: 100%;
+  height: 100px;
+  background-color: cornsilk;
+}
+
+.slider > h2 {
+  position: sticky;
+  background-color: cadetblue;
+  top: 45px;
+}
+
+.slider-2 {
+  width: 100%;
+  height: 100px;
+  background-color: cornsilk;
+}
+
+.slider-2 > h2 {
+  position: sticky;
+  top: 45px;
+  background-color: cadetblue;
+}
+
+.slider-2 p {
+  background-color: cornsilk;
+}
+
+#modal:target {
+  position: fixed;
+  background-color: darkcyan;
+  color: #fff;
+}

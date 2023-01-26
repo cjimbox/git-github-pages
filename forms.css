@@ -1,0 +1,41 @@
+* {
+  margin-left: 17px;
+  caret-color: aqua;
+}
+
+h1 {
+  caret-color: #90b;
+}
+
+textarea {
+  caret-color: #90b;
+}
+
+.contact-form {
+  border: medium solid #000;
+  background-color: #000;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact-form > * {
+  display: block;
+  width: 90%;
+  margin-bottom: 1rem;
+  border: medium solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #333;
+}
+
+.contact-form > input {
+  height: 50px;
+}
+.contact-form input:first-child {
+  margin-top: 1rem;
+}
+
+.contact-form > *::placeholder {
+  font-size: 2rem;
+  color: rgb(19, 243, 176);
+}

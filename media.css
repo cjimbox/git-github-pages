@@ -1,0 +1,162 @@
+html,body,h2{
+  margin:0;
+  padding:0;
+}
+h2{
+  text-align: center;
+}
+body{
+  background: #eee;
+  font-family: sans-serif;
+  color: #333;
+}
+.fila{
+  width: 90%;
+  margin: 2% auto;
+  overflow: hidden;
+}
+.columna{
+  background: lightblue;
+  float: left;
+  margin-right: 2%;
+  box-sizing: border-box;
+  padding: 1em;
+  overflow: hidden;
+}
+/*POR DEBAJO DE 480PX UNA COLUMNA*/
+.columna{
+  width:100%;
+  background: #f00;
+  user-select: none;
+}
+
+
+/*MAYOR 480PX*/
+@media (min-width: 480px){
+  .columna{
+    background: #0f0;
+  }
+  /*4 COLUMNAS SON DOS EN MAYOR A 480PX*/
+  .cuatro_columnas .columna{
+    width: 49%;
+  }
+  .cuatro_columnas .columna:nth-child(2n){
+    margin-right: 0;
+  }
+  /*6 COLUMNAS SON DOS EN MAYOR A 480PX*/
+  .seis_columnas .columna{
+    width: 49%;
+  }
+  .seis_columnas .columna:nth-child(2n){
+    margin-right: 0;
+  }
+  /*12 COLUMNAS SON TRES EN MAYOR A 480PX*/
+  .doce_columnas .columna{
+    width: 32%;
+  }
+  .doce_columnas .columna:nth-child(3n){
+    margin-right: 0;
+  }
+}/*Fin @media 480px*/
+
+
+/*MAYOR 780PX*/
+@media (min-width: 780px){
+  .columna{
+    background: #0ff;
+  }
+  /*ASIDE IZQUIERDA A PARTIR DE 780PX*/
+  .aside_izquierda .aside{
+    width: 23.5%;
+  }
+  .aside_izquierda .contenido{
+    width: 74.5%;
+    margin-right: 0;
+  }
+  /*ASIDE DERECHA A PARTIR DE 780PX*/
+  .aside_derecha .contenido{
+    width: 74.5%;
+  }
+  .aside_derecha .aside{
+    width: 23.5%;
+    margin-right: 0;
+  }
+  /*3 COLUMNAS A PARTIR DE 780PX*/
+  .tres_columnas .columna{
+    width: 32%;
+  }
+  .tres_columnas .columna:nth-child(3n){
+    margin-right: 0;
+  }
+  /*6 COLUMNAS SON DOS EN MAYOR A 780PX*/
+  .seis_columnas .columna{
+    width: 32%;
+  }
+  .seis_columnas .columna:nth-child(2n){
+    margin-right: 2%;
+  }
+  .seis_columnas .columna:nth-child(3n){
+    margin-right: 0;
+  }
+  /*12 COLUMNAS SON TRES EN MAYOR A 780PX*/
+  .doce_columnas .columna{
+    width: 23.5%;
+  }
+  .doce_columnas .columna:nth-child(3n){
+    margin-right: 2%;
+  }
+  .doce_columnas .columna:nth-child(4n){
+    margin-right: 0;
+  }
+}/*Fin @media 780px*/
+
+/*MAYOR 1024PX*/
+@media (min-width: 1024px){
+  .columna{
+    background: lightblue;
+  }
+  /*2 COLUMNAS A PARTIR DE 1024PX*/
+  .dos_columnas .columna{
+    width: 49%;
+  }
+  .dos_columnas .columna:nth-child(2n){
+    margin-right: 0;
+  }
+  /*4 COLUMNAS SON DOS EN MAYOR A 1024PX*/
+  .cuatro_columnas .columna{
+    width: 23.5%;
+  }
+  .cuatro_columnas .columna:nth-child(2n){
+    margin-right: 2%;
+  }
+  .cuatro_columnas .columna:nth-child(4n){
+    margin-right: 0;
+  }
+  /*6 COLUMNAS SON DOS EN MAYOR A 1024PX*/
+  .seis_columnas .columna{
+    width: 15%;
+  }
+  .seis_columnas .columna:nth-child(2n){
+    margin-right: 2%;
+  }
+  .seis_columnas .columna:nth-child(3n){
+    margin-right: 2%;
+  }
+  .seis_columnas .columna:nth-child(6n){
+    margin-right: 0;
+  }
+  /*12 COLUMNAS SON TRES EN MAYOR A 1024PX*/
+  .doce_columnas .columna{
+    width: 6.5%;
+  }
+  .doce_columnas .columna:nth-child(3n){
+    margin-right: 2%;
+  }
+  .doce_columnas .columna:nth-child(4n){
+    margin-right: 2%;
+  }
+  .doce_columnas .columna:nth-child(12n){
+    margin-right: 0;
+  }
+}/*Fin @media 1024PX*/
+

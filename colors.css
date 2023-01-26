@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+body {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin-left: 1em;
+}
+
+h1 {
+  color: rgb(85, 0, 255);
+  font-size: 2em;
+}
+
+h2 {
+  color: rgb(255, 0, 0);
+  font-size: 1.8em;
+}
+
+li {
+  font-size: 1.4em;
+}
+
+.color-name {
+  width: 6em;
+  height: 2em;
+  background-color: moccasin;
+  color: #fff;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.hexadecimal {
+  background-color: #f009;
+  border: thin solid #000;
+  width: 6em;
+  height: 3em;
+}
+
+.rgb {
+  background-color: rgb(85, 0, 255);
+  width: 6em;
+  height: 4em;
+}
+
+.rgba {
+  background-color: rgba(90, 160, 230, 70%);
+  width: 6em;
+  height: 3em;
+}
+
+.hsl {
+  background-color: hsl(0, 60%, 40%);
+  width: 6em;
+  height: 4em;
+}
+
+.hsla {
+  background-color: hsla(90, 60%, 40%, 80%);
+  width: 35em;
+  height: 20em;
+}
+
+.transparent {
+  background-color: transparent;
+  color: 1rem;
+  width: 4rem;
+  height: 10rem;
+  border: thick solid #000;
+}
+
+.currentcolor {
+  color: #98b;
+  background-color: cornflowerblue;
+  width: 6rem;
+  height: 6rem;
+  border: thick solid currentColor;
+}
+
+.opacity {
+  width: 6rem;
+  height: 6rem;
+  border: thin solid #000;
+  background-color: rgb(0, 255, 0);
+  opacity: 50%;
+}

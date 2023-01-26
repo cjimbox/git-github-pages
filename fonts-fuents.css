@@ -1,0 +1,217 @@
+:root {
+  font-size: 100px;
+}
+
+html {
+  background-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin-left: 0.17rem;
+}
+
+@font-face {
+  font-family: "Wrong Delivery";
+  src: url("assets/WrongDelivery.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  font-size: clamp(0.5rem, 25vw, 0.75rem);
+  color: rgb(251, 0, 0);
+}
+
+h2 {
+  font-size: 0.7rem;
+  color: rgb(0, 38, 255);
+}
+
+h3 {
+  font-size: 0.5rem;
+  color: rgb(3, 97, 73);
+}
+
+h4 {
+  font-size: 0.3rem;
+}
+
+.texto {
+  font: italic, small-caps, 600, 32px / 2, "Wrong Delivery", sans-serif;
+  /*
+  font: italic small-caps 600 0.16rem / 3 georgia;
+  */
+}
+
+.fonts {
+  font-size: 0.16rem;
+  font-family: "Raleway", sans-serif;
+  font-variant: small-caps;
+  line-height: 2;
+}
+
+.estilos-texto p {
+  font-size: 0.16rem;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right center;
+}
+
+.center {
+  text-align: start;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.none > a {
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.overline {
+  text-decoration: magenta;
+}
+
+.indent {
+  text-indent: 0.3rem;
+}
+
+.overflow {
+  text-overflow: "[..]";
+  width: 3rem;
+  height: 0.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.uppercase {
+  text-transform: none;
+}
+
+.letter-spacing {
+  letter-spacing: 0.1rem;
+}
+
+.normal {
+  white-space: normal;
+}
+
+.pre {
+  white-space: pre;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}
+
+.keep-all {
+  word-break: keep-all;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
+.word-spacing {
+  word-spacing: 0.2rem;
+}
+
+.horizontal {
+  writing-mode: sideways-rl;
+}
+
+.vertical-lr {
+  writing-mode: vertical-lr;
+}
+
+.vertical-rl {
+  writing-mode: vertical-rl;
+}
+
+.radius {
+  background-color: darkkhaki;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 1rem 2rem 3rem 4rem;
+}
+
+.radius-2 {
+  background-color: rgb(3, 3, 0);
+  border: thick solid rgb(52, 13, 230);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.outline {
+  background-color: #000;
+  border: thin solid mediumaquamarine;
+  width: 6rem;
+  height: 3rem;
+  outline: thick solid midnightblue;
+  outline-offset: -0.5rem;
+}
+
+.outline-2 {
+  background-color: #000;
+  border: thin solid mediumaquamarine;
+  width: 6rem;
+  height: 3rem;
+  outline: thick solid midnightblue;
+  outline-offset: 0.5rem;
+}
+
+.centro {
+  background-color: #f00;
+  color: #fff;
+  width: 3rem;
+  height: 80px;
+}
+
+.centro > .texto-a {
+  font-size: 16px;
+  line-height: 50px;
+}

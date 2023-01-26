@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="variables-funciones.css">
+  <title>Variables y Funciones en CSS</title>
+</head>
+
+<body>
+  <h1>Variables y Funciones en CSS</h1>
+  <h2>Custom Properties y Function Var()</h2>
+  <div class="variable">
+    <div class="variable-1">Lorem ipsum dolor</div>
+    <div class="variable-2">Lorem ipsum dolor</div>
+  </div>
+  <h2>:root</h2>
+  <p>Es una pseudoclase que hace referencia al elemento HTML pero tiene más peso</p>
+  <h2>Variables Universales</h2>
+  <div class="variables-1">Variable 1</div>
+  <div class="variables-2">Variable 2</div>
+  <div class="variables-3">Variable 3</div>
+  <div class="variables-4">Variable 4</div>
+  <p style="--var: 16px;">Podemos poner variables en elementos en linea</p>
+  <h2>En Elementos en Línea</h2>
+  <div style="--color: #f00;">
+    <p style="background-color: var(--color);">
+      Lorem, ipsum dolor
+    </p>
+  </div>
+  <h2 style="font-size: 2em;">Function Url()</h2>
+  <p>Nos sirve para cargar contenido externo</p>
+  <p>Un ejemplo es el @import y el background-image</p>
+  <h2 style="font-size: 2em;">Función Calc()</h2>
+  <div class="calc">1234567890</div>
+  <p>Sirve para hacer una operación, siempre hay que dejar espacios en blanco</p>
+  <h2>Función min() & max()</h2>
+  <div class="min-max">AAA.</div>
+  <h2>Función Clamp</h2>
+  <p>Usamos el h1 como ejemplo, puede servir para hacer textos fluidos</p>
+</body>
+
+</html>

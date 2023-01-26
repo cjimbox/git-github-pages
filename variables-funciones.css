@@ -1,0 +1,68 @@
+:root {
+  --var-1: thick solid #f00;
+  --var-2: #0bb;
+  --var-3: #cbb;
+  --var-4: #34b;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin-left: 15px;
+}
+
+.variable {
+  --bg-moccasin: moccasin;
+  background-image: url("assets/css-svgrepo-com.svg");
+}
+
+.variable-1 {
+  background-color: var(--bg-moccasin);
+}
+
+.variable-2 {
+  --font-size: 30px;
+  font-size: var(--font-size);
+}
+
+.variables-1 {
+  border: var(--var-1);
+}
+
+.variables-2 {
+  background-color: var(--var-2);
+}
+
+.variables-3 {
+  color: var(--var-3);
+}
+
+.variables-4 {
+  background-color: var(--var-4);
+}
+
+.calc {
+  background-color: bisque;
+  --padding: 2ch;
+  --ch-10: 10ch;
+  width: calc(var(--ch-10) + var(--padding));
+}
+
+.min-max {
+  background-color: var(--var-2);
+  width: min(300px, 20vw, 3rem);
+  height: max(50vh, 200px);
+}
+
+h1 {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}

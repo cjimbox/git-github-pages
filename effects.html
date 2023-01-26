@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="effects.css">
+  <title>Efectos Visuales en CSS</title>
+</head>
+
+<body>
+  <h1>Efectos Visuales en CSS</h1>
+  <h2>Sombras</h2>
+  <h3>Tipos</h3>
+  <ol>
+    <li>Box Shadow</li>
+    <li>Text Shadow</li>
+    <li>Filtro: Drop Shadow()</li>
+  </ol>
+  <h3>Box Shadow</h3>
+  <div class="box-shadow">
+    Box Shadow
+  </div>
+  <h3>Text Shadow</h3>
+  <div class="ass">
+    <p class="text-shadow">Lorem, ipsum dolor</p>
+  </div>
+  <h3>Filtros de Sombras(Drop Shadow()</h3>
+  <div class="transparent">
+    <img src="img/imagenes-png.png" alt="Árbol">
+  </div>
+  <br><br><br><br>
+  <h3>Sombras Múltiples</h3>
+  <div class="shadows-multiples">Shadows Múltiples</div>
+  <br><br><br><br><br><br><br><br><br><br>
+  <h2>Degradados</h2>
+  <h3>Tipos</h3>
+  <ol>
+    <li>Linear Gradient</li>
+    <li>Radial Gradient</li>
+    <li>Conic Gradient</li>
+  </ol>
+  <h3>Linear Gradient</h3>
+  <div class="linear linear-1"></div>
+  <div class="linear linear-2"></div>
+  <div class="linear linear-3"></div>
+  <div class="linear linear-4"></div>
+  <div class="linear linear-5"></div>
+  <h3>Radial Gradient</h3>
+  <div class="radial radial-1"></div>
+  <div class="radial radial-2"></div>
+  <div class="radial radial-3"></div>
+  <div class="radial radial-4"></div>
+  <div class="radial radial-5"></div>
+  <div class="radial radial-6"></div>
+  <h3>Conic Gradient</h3>
+  <div class="conic conic-1"></div>
+  <div class="conic conic-2"></div>
+  <div class="conic conic-3"></div>
+  <div class="conic conic-4"></div>
+  <div class="conic conic-5"></div>
+  <div class="conic conic-6"></div>
+  <h2>Patrones de Degradados</h2>
+  <div class="caja patron-1"></div>
+  <div class="caja patron-2"></div>
+  <div class="caja patron-3"></div>
+  <h3>Gráficas con Degradados</h3>
+  <div class="pastel"></div>
+  <div class="dona"></div>
+  <div class="pokeball"></div>
+  </div>
+  <h2>Filtros</h2>
+  <h3>Tipos</h3>
+  <ol>
+    <li>Blur(rem)</li>
+    <li>Brightness(0-1)</li>
+    <li>Contrast(0-1)</li>
+    <li>Opacity(0-1)</li>
+    <li>Invert(0-1)</li>
+    <li>Grayscale(0-1)</li>
+    <li>Sepia(0-1)</li>
+    <li>Saturate(0-1)</li>
+    <li>Hue-rotate(0-360deg)</li>
+    <li>Drop-Shadow(mov-x mov-y blur color)</li>
+  </ol>
+  <div class="filters">
+    <h3 class="blur">Blur</h3>
+    <img src="img/paisaje-natural.jpg" alt="Paisaje Natural">
+    <h3>Brightness</h3>
+    <img src="img/paisaje-natural.jpg" alt="Paisaje Natural">
+    <h3>Contrast</h3>
+    <img src="img/paisaje-natural.jpg" alt="Paisaje Natural">
+    <h3>Opacity</h3>
+    <img src="img/paisaje-natural.jpg" alt="Paisaje Natural">
+    <h3>Invert</h3>
+    <img src="img/paisaje-natural.jpg" alt="Paisaje Natural">
+    <h3>Grayscale</h3>
+    <img src="img/paisaje-natural.jpg" alt="Paisaje Natural">
+    <h3>Sepia</h3>
+    <img src="img/paisaje-natural.jpg" alt="Paisaje Natural">
+    <h3>Saturate</h3>
+    <img src="img/paisaje-natural.jpg" alt="Paisaje Natural">
+    <h3>Hue-Rotate</h3>
+    <img src="img/paisaje-natural.jpg" alt="Paisaje Natural">
+    <h3>Drop-Shadow</h3>
+    <img src="img/paisaje-natural.jpg" alt="Paisaje Natural">
+  </div>
+  <br><br><br>
+  <h3>Filtros Múltiples</h3>
+  <img src="img/paisaje-natural.jpg" alt="Paisaje Natural" class="filters-multiple">
+  <h3>Filtros a Fondos(Backdrop-filter)</h3>
+  <p>Podemos aplicar los mismos filtros</p>
+  <div class="back-1">
+    <p>Hola Mundo</p>
+  </div>
+  <div class="back-2">
+    <p>Hola Mundo</p>
+  </div>
+  <h3>Modo Dark/Light con Filtros</h3>
+  <h2>Modos de Mezcla(mix-blend-mode)</h2>
+  <div class="mezclas relative">
+    <img src="img/paisaje-natural.jpg" alt="Paisaje Natural" class="blend-mode absolute">
+    <img src="img/abstract-1278077_1920.jpg" alt="Paisaje" class="blend-mode-2 absolute">
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <h2>Modos de Mezcla a Fondos(Background-blend-mode)</h2>
+  <div class="relative">
+    <div class="background-blend-mode absolute"></div>
+    <div class="background-blend-mode-2 absolute"></div>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br>
+  <h2>Máscaras(Clip Path)</h2>
+  <h3>Circle</h3>
+  <img src="img/paisaje-natural.jpg" alt="Paisaje Natural" class="clip circle">
+  <h3>Inset-Round</h3>
+  <img src="img/paisaje-natural.jpg" alt="Paisaje Natural" class="clip inset-round">
+  <h3>Ellipse</h3>
+  <img src="img/paisaje-natural.jpg" alt="Paisaje Natural" class="clip ellipse">
+  <h3>Polygon</h3>
+  <img src="img/paisaje-natural.jpg" alt="Paisaje Natural" class="clip polygon">
+  <br><br><br><br>
+  <h2>Formas(Shape Outside)</h2>
+  <div class="contenedor">
+    <img src="img/paisaje-natural.jpg" alt="Paisaje Natural" class="clip forma-1 float-left figure">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio odio similique distinctio dolores excepturi in
+      odit
+      iste praesentium nihil obcaecati laudantium est sed et, magni natus. Odio, eius! Unde, cupiditate.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam at aliquid eligendi sit illum id incidunt culpa
+      aperiam ipsa placeat similique non, natus impedit quaerat! Beatae fugit iure cum voluptas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, provident non velit fugiat id, eligendi, quas
+      nisi
+      harum voluptate eius ad quos minima repudiandae magni laudantium ex vitae error incidunt!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam et error odit voluptatum, in, suscipit
+      reiciendis iure consectetur inventore possimus repellat quaerat, accusamus dolorem odio mollitia placeat atque.
+      Perferendis, porro!</p>
+    <img src="img/paisaje-natural.jpg" alt="Paisaje Natural" class="clip forma-2 float-right figure">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio odio similique distinctio dolores excepturi in
+      odit
+      iste praesentium nihil obcaecati laudantium est sed et, magni natus. Odio, eius! Unde, cupiditate.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam at aliquid eligendi sit illum id incidunt culpa
+      aperiam
+      ipsa placeat similique non, natus impedit quaerat! Beatae fugit iure cum voluptas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, provident non velit fugiat id, eligendi, quas
+      nisi
+      harum voluptate eius ad quos minima repudiandae magni laudantium ex vitae error incidunt!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam et error odit voluptatum, in, suscipit
+      reiciendis iure consectetur inventore possimus repellat quaerat, accusamus dolorem odio mollitia placeat atque.
+      Perferendis, porro!</p>
+    <img src="img/paisaje-natural.jpg" alt="Paisaje Natural" class="clip forma-3 float-left figure">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio odio similique distinctio dolores excepturi in
+      odit
+      iste praesentium nihil obcaecati laudantium est sed et, magni natus. Odio, eius! Unde, cupiditate.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam at aliquid eligendi sit illum id incidunt culpa
+      aperiam
+      ipsa placeat similique non, natus impedit quaerat! Beatae fugit iure cum voluptas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, provident non velit fugiat id, eligendi, quas
+      nisi
+      harum voluptate eius ad quos minima repudiandae magni laudantium ex vitae error incidunt!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam et error odit voluptatum, in, suscipit
+      reiciendis iure consectetur inventore possimus repellat quaerat, accusamus dolorem odio mollitia placeat atque.
+      Perferendis, porro!</p>
+  </div>
+  <br><br><br>
+  <div class="mexico">
+    <img src="img/1200px-Coat_of_arms_of_Mexico.svg.png" alt="Águila de México">
+  </div>
+  <br><br><br>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" href="">
+  <link rel="icon" href="assets/css-svgrepo-com.svg">
+  <title>Practicas con CSS</title>
+  <style>
+    .parrafo {
+      color: rgb(98, 243, 123)
+    }
+  </style>
+</head>
+
+<body>
+  <article id="temario">
+    <h1>APRENDIENDO CSS</h1>
+    <h2>Temario</h2>
+    <ol>
+      <li><a href="index.html#sintaxis">Sintaxis Básica</a></li>
+      <li><a href="index.html#comentarios">Comentarios</a></li>
+      <li><a href="index.html#formas-de-invocacion">Formas de Invocación</a></li>
+      <li><a href="index.html#selectores-basicos">Selectores Básicos</a></li>
+      <li><a href="index.html#selectores-avanzados">Selectores Avanzados</a></li>
+      <li><a href="index.html#selectores-atributos">Selectores con Atributos</a></li>
+      <li><a href="index.html#selector-universal">Selector Universal</a></li>
+      <li><a href="index.html#pseudoclases">Pseudoclases de Estado</a></li>
+      <li><a href="index.html#pseudoclases-posicion">Pseudoclases de Posición</a></li>
+      <li><a href="index.html#pseudoelementos">Pseudoelementos</a></li>
+      <li><a href="index.html#agrupacion-selectores">Agrupación de Selectores</a></li>
+      <li><a href="index.html#algoritmo-css">Algoritmo CSS</a></li>
+      <li><a href="index.html#normalizacion">Normalización</a></li>
+      <li><a href="index.html#prefijos-ordenadores">Prefijos de los Ordenadores</a></li>
+      <li><a href="index.html#box-model">Box Model</a></li>
+      <li><a href="index.html#alto-ancho">Width y Height</a></li>
+      <li><a href="index.html#border">Border</a></li>
+      <li><a href="index.html#rellenos">Margin y Padding</a></li>
+      <li><a href="index.html#inline-block">Elementos en Línea y Elementos en Bloque</a></li>
+      <li><a href="index.html#display">Display</a></li>
+      <li><a href="index.html#visibility">Visiblility</a></li>
+      <li><a href="index.html#overflow">Overflow</a></li>
+      <li><a href="index.html#box-sizing">Box Sizing</a></li>
+      <li><a href="index.html#float-clear">Float & Clear</a></li>
+      <li><a href="index.html#colapso-margenes">Colapso de Márgenes Verticales</a></li>
+      <li><a href="index.html#margenes-verticales">Márgenes Verticales</a></li>
+      <li><a href="index.html#centrado-cajas">Centrado de Cajas</a></li>
+      <li><a href="position.html" target="_blank">Posiciones CSS</a></li>
+      <li><a href="practice.html" target="_blank">Practicas</a></li>
+      <li><a href="colors.html" target="_blank">Colores en CSS</a></li>
+      <li><a href="units.html">Unidades de Medida en CSS</a></li>
+      <li><a href="effects.html">Efectos en CSS</a></li>
+      <li><a href="one-page.html" target="_blank">One Page(Scroll Margin & Scroll Behaivor</a></li>
+      <li><a href="slides.html" target="_blank">Ajuste de Scroll - Efecto Slides(Scroll-snap-type &
+          Scroll-snap-align</a></li>
+      <li><a href="motions.html" target="_blank">Movimiento en CSS</a></li>
+      <li><a href="animations.css" target="_blank">Animaciones en CSS</a></li>
+      <li><a href="" target="_blank"></a></li>
+      <li><a href="" target="_blank"></a></li>
+      <li><a href="" target="_blank"></a></li>
+      <li><a href="" target="_blank"></a></li>
+      <li><a href="" target="_blank"></a></li>
+      <li><a href="" target="_blank"></a></li>
+      <li><a href="" target="_blank"></a></li>
+      <li><a href="" target="_blank"></a></li>
+      <li><a href="" target="_blank"></a></li>
+      <li><a href="" target="_blank"></a></li>
+      <li><a href="" target="_blank"></a></li>
+      <li><a href="" target="_blank"></a></li>
+      <li><a href="" target="_blank"></a></li>
+      <li><a href="" target="_blank"></a></li>
+      <li><a href="" target="_blank"></a></li>
+      <li><a href="" target="_blank"></a></li>
+    </ol>
+  </article>
+
+  <article id="sintaxis">
+    <h2>Sintaxis</h2>
+    <h4>El Selector</h4>
+    <p>El elemento que queremos modificar</p>
+    <img src="img/1.png" alt="El Selector">
+    <h4>Bloque de Declaraciones</h4>
+    <p>Es el conjunto de propiedades que queremos modificar</p>
+    <img src="img/2.png" alt="Bloque de Declaraciones">
+  </article>
+
+  <article id="comentarios">
+    <h2>Comentarios</h2>
+    <p>De esta manera se ponen comentarios:</p>
+    <img src="img/3.png" alt="Comentario CSS">
+  </article>
+
+  <article id="formas-de-invocacion">
+    <div class="prueba grande">
+      <p>Lorem</p>
+    </div>
+    <h2>Formas de Invocación</h2>
+    <h4>Inline</h4>
+    <p style="color: rgb(255, 255, 255); background-color: rgb(25, 0, 255);">Se aplica por linea</p>
+    <img src="img/4.png" alt="En línea">
+    <h4>Interna</h4>
+    <p>Se usa el atributo Style</p>
+    <img src="img/6.png" alt="Interna">
+    <h4>Externa</h4>
+    <img src="img/5.png" alt="Externa">
+    <h4>Import</h4>
+    <p>No es recomendable</p>
+    <img src="img/7.png" alt="Import">
+  </article>
+
+  <article id="selectores-basicos">
+    <h2>Selectores Básicos</h2>
+    <h4>Por Elemento</h4>
+    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam magni, molestiae eaque voluptate at temporibus
+      culpa cum recusandae asperiores, ipsam optio quaerat numquam impedit fugit perferendis, aliquam sunt? Cum, nulla.
+    </span><br>
+    <h4>Por Id</h4>
+    <p id="bg-c-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum atque fuga iure accusamus ipsum?
+      Fugiat omnis neque soluta earum tempora provident facere eveniet expedita, ullam exercitationem distinctio maiores
+      at molestias?</p>
+    <h4>Por clase</h4>
+    <p class="text-40">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure, doloribus quia eligendi
+      itaque alias, illum hic et ea exercitationem labore inventore libero soluta amet tenetur quisquam, maiores iusto
+      odit!</p>
+    <h4>Varias Clases</h4>
+    <p class="text-40 bg-c-blue fw-70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt mollitia
+      praesentium sunt, illum quam harum labore delectus eius nemo nam laborum facere vel quasi. Quod eius architecto
+      ipsa itaque delectus!</p>
+  </article>
+
+  <article id="selectores-avanzados">
+    <h2>Selectores Avanzados</h2>
+    <h4 id="hijos-directos">Hijos Directos
+      <ul class="hijos-directos-ul">
+        <li class="hijos-directos-li"><b>Hola 1</b></li>
+        <li><b>Hola 2</b></li>
+        <li class="hijos-directos-li"><b>Hola 3</b></li>
+        <li><b>Hola 4</b></li>
+      </ul>
+    </h4>
+    <h4 class="hijos-descendientes">Hijos Descendientes</h4>
+    <ul class="hijos-descendientes-ul">
+      <li><b>Hola 1</b></li>
+      <li><b>Hola 2</b></li>
+      <li><b>Hola 3</b></li>
+      <li><b>Hola 4</b></li>
+    </ul>
+    <h4 class="hermanos-generales">Hermanos Generales</h4>
+    <ul>
+      <li><b>Hola 1</b></li>
+      <li class="hermanos-generales-li"><b>Hola 2</b></li>
+      <li><b>Hola 3</b></li>
+      <li><b>Hola 4</b></li>
+    </ul>
+    <h4 class="hermanos-adyacentes">Hermanos Adyacentes</h4>
+    <ul>
+      <li><b>Hola 1</b></li>
+      <li><b>Hola 2</b></li>
+      <li class="hermanos-adyacentes-li"><b>Hola 3</b></li>
+      <li><b>Hola 4</b></li>
+    </ul>
+  </article>
+
+  <article id="selectores-atributos">
+    <h2>Selectores con Atributos</h2>
+    <h4>Atributo Puro</h4>
+    <ul class="atributo-puro">
+      <li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+      <li><a href="https://jonmircha.com/notas" target="_blank">Notas</a></li>
+      <li><a href="https://jonmircha.com/ahora" target="_blank">Ahora</a></li>
+      <li><a href="https://jonmircha.com/cursos" target="_blank">Cursos</a></li>
+      <li><a href="https://jonmircha.com/cv" target="_blank">CV</a></li>
+      <li><a href="https://jonmircha.com/blog" target="_blank">Blog</a></li>
+    </ul>
+    <h4>Atributo + Valor</h4>
+    <ul class="atributo-valor">
+      <li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+      <li><a href="https://jonmircha.com/notas" target="_blank">Notas</a></li>
+      <li><a href="https://jonmircha.com/ahora" target="_blank">Ahora</a></li>
+      <li><a href="https://jonmircha.com/cursos" target="_blank">Cursos</a></li>
+      <li><a href="https://jonmircha.com/cv" target="_blank">CV</a></li>
+      <li><a href="https://jonmircha.com/blog" target="_blank">Blog</a></li>
+    </ul>
+    <h4>Atributo con * palabra de cualquier parte</h4>
+    <ul class="atributo-asterisco">
+      <li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+      <li><a href="https://jonmircha.com/notas" target="_blank">Notas</a></li>
+      <li><a href="https://jonmircha.com/ahora" target="_blank">Ahora</a></li>
+      <li><a href="https://jonmircha.com/cursos" target="_blank">Cursos</a></li>
+      <li><a href="https://jonmircha.com/cv" target="_blank">CV</a></li>
+      <li><a href="https://jonmircha.com/blog" target="_blank">Blog</a></li>
+    </ul>
+    <h4>Atributo con ^ palabra del inicio</h4>
+    <ul class="atributo-inicio">
+      <li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+      <li><a href="https://jonmircha.com/notas" target="_blank">Notas</a></li>
+      <li><a href="https://jonmircha.com/ahora" target="_blank">Ahora</a></li>
+      <li><a href="https://jonmircha.com/cursos" target="_blank">Cursos</a></li>
+      <li><a href="http://jonmircha.com/cv" target="_blank">CV</a></li>
+      <li><a href="https://jonmircha.com/blog" target="_blank">Blog</a></li>
+    </ul>
+    <h4>Atributo con $ palabra al final</h4>
+    <h4></h4>
+    <ul class="atributo-final">
+      <li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+      <li><a href="https://jonmircha.com/notas" target="_blank">Notas</a></li>
+      <li><a href="https://jonmircha.com/ahora" target="_blank">Ahora</a></li>
+      <li><a href="https://jonmircha.com/cursos" target="_blank">Cursos</a></li>
+      <li><a href="https://jonmircha.com/cv" target="_blank">CV</a></li>
+      <li><a href="https://jonmircha.com/blog" target="_blank">Blog</a></li>
+    </ul>
+    <h4>Atributo con ~ listas espaciadas</h4>
+    <ul class="atributo-espaciado">
+      <li class="meta-item cursos ahora"><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+      <li><a href="https://jonmircha.com/notas" target="_blank">Notas</a></li>
+      <li><a href="https://jonmircha.com/ahora" target="_blank">Ahora</a></li>
+      <li><a href="https://jonmircha.com/cursos" target="_blank">Cursos</a></li>
+      <li><a href="https://jonmircha.com/cv" target="_blank">CV</a></li>
+      <li><a href="https://jonmircha.com/blog" target="_blank">Blog</a></li>
+    </ul>
+    <h4>Atributo con | listas espaciadas seguidas de un guión medio</h4>
+    <ul class="atributo-espaciado-guion-medio">
+      <li class="meta-item cursos"><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+      <li><a href="https://jonmircha.com/notas" target="_blank">Notas</a></li>
+      <li><a href="https://jonmircha.com/ahora" target="_blank">Ahora</a></li>
+      <li><a href="https://jonmircha.com/cursos" target="_blank">Cursos</a></li>
+      <li class="meta-item cursos"><a href="https://jonmircha.com/cv" target="_blank">CV</a></li>
+      <li><a href="https://jonmircha.com/blog" target="_blank">Blog</a></li>
+    </ul>
+  </article>
+
+  <article id="selector-universal">
+    <h2>Selector Universal</h2>
+    <ul class="universal">
+      <li><b>Hola 1</b></li>
+      <li><b>Hola 2</b></li>
+      <li><b>Hola 3</b></li>
+      <li><b>Hola 4</b></li>
+    </ul>
+  </article>
+
+  <article id="pseudoclases">
+    <h2>Pseudoclases(10)</h2>
+    <h4>De Estado</h4>
+    <form class="pseudoclases-estado">
+      <input type=" text" required value="Hola"><br>
+      <input type="email" value="jimmychan663@gmail.com"><br>
+      <input type="email" value="jimmychan663gmail.com"><br>
+      <input type="text" disabled><br>
+      <input type="text">
+    </form><br><br>
+    <section class="pseudoclases-enlaces">
+      <a href="AAS">Link</a><br>
+      <a href="https://facebook.com" target=":blank">Visited</a><br>
+      <a href="index.html#temario" target>Target</a>
+    </section><br><br>
+    <section class="otras-pseudoclases">
+      <p class="parrafo-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, deleniti, molestiae
+        officiis provident in soluta quo ea esse animi veritatis modi? Vero vitae sapiente accusantium similique, enim
+        ut maiores laudantium.</p>
+      <p class="parrafo-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim nihil odio dolores iure dolore
+        veniam, illo beatae quo reprehenderit ipsam cum at neque corrupti obcaecati, ullam qui aperiam earum sequi.</p>
+    </section>
+  </article>
+
+  <article id="pseudoclases-posicion">
+    <h2>Pseudoclases por Posicion(10)</h2>
+    <h4>First-chilid</h4>
+    <ul class="first-child">
+      <li>Manzana</li>
+      <li>Naranja</li>
+      <li>Elote</li>
+      <li>Calabaza</li>
+    </ul>
+    <h4>Last-child</h4>
+    <ul class="last-child">
+      <li>Agua</li>
+      <li>Coca</li>
+      <li>Horchata</li>
+      <li>Té</li>
+    </ul>
+    <h4>nth-child</h4>
+    <ul class="nth-child">
+      <li>Inca</li>
+      <li>Haumea</li>
+      <li>Iris</li>
+      <li>Shinra</li>
+      <li>Sumire</li>
+      <li>Sho</li>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatibus libero animi, amet mollitia,
+        facilis magni porro, sequi reiciendis soluta velit aperiam. Nostrum fugiat nihil accusantium voluptas molestiae
+        ratione doloremque!</p>
+    </ul>
+    <h4>Formulas del nth</h4>
+    <h4>De patrones</h4>
+    <ul class="patrones">
+      <li>A</li>
+      <li>B</li>
+      <p>loe</p>
+      <li>C</li>
+      <li>D</li>
+      <li>E</li>
+      <li>F</li>
+      <li>G</li>
+      <li>H</li>
+      <li>I</li>
+      <li>J</li>
+      <li>K</li>
+      <li>M</li>
+    </ul>
+    <h4>Pares e Inpares</h4>
+    <ul class="pares">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <p>lorem</p>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <p>lorem</p>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+    </ul>
+    <h4>First-of-type</h4>
+    <section class="first-of-type">
+      <del>Lorem ipsum</del>
+      <p>Lorem ipsum</p>
+      <b>Lorem ipsum</b>
+      <i>Lorem, ipsum</i>
+      <p>Lorem ipsum</p>
+    </section>
+    <h4>Last-of-type</h4>
+    <section class="last-of-type">
+      <del>Lorem ipsum</del>
+      <p>Lorem ipsum</p>
+      <b>Lorem ipsum</b>
+      <p>Lorem ipsum</p>
+      <i>Lorem ipsum</i>
+    </section>
+    <h4>Nth-of-type</h4>
+    <section class="nth-of-type">
+      <p>Lorem ipsum</p>
+      <b>Lorem ipsum</b>
+      <b>Lorem ipsum</b>
+      <p>Lorem ipsum</p>
+      <i>Lorem ipsum</i>
+    </section>
+    <h4>Not</h4>
+    <section class="not">
+      <ul class="not-container">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <p>Lorem ipsum</p>
+        <p>Lorem ipsum</p>
+        <i>Lorem ipsum</i><br>
+        <p>Lorem ipsum</p>
+        <b>Lorem ipsum</b><br>
+        <b>Lorem ipsum</b><br>
+        <b>Lorem ipsum</b><br>
+        <b>Lorem ipsum</b>
+      </ul>
+    </section>
+  </article>
+
+  <article id="pseudoelementos">
+    <h2>Pseudoelementos</h2>
+    <h4>First Letter</h4>
+    <p class="first-letter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sint provident fugit labore
+      tempora modi sequi doloremque quidem commodi nam vel rem aliquam placeat, laborum nemo itaque veritatis culpa
+      similique.</p>
+    <h4>First Line</h4>
+    <p class="first-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet possimus minima veritatis
+      aspernatur fugiat facere ea eius nemo illo molestias accusantium temporibus inventore quisquam atque, eaque quis!
+      Omnis, eum est.</p>
+    <h4>Before y After</h4>
+    <p>El producto tiene un precio de: <span class="precio">400</span> y eso vale</p>
+    <h4>Selection</h4>
+    <p class="selection">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, deserunt modi, laborum eos
+      natus laudantium quidem vero sint quisquam autem ad nihil! Modi, exercitationem id. Mollitia officia modi aliquid
+      impedit.</p>
+    <h4>Placeholder</h4>
+    <input type="text" name="nombre" class="placeholder" placeholder="Escribe tu nombre:">
+  </article>
+
+  <article id="agrupacion-selectores">
+    <h2>Agrupación de Selectores</h2>
+    <input type="text"><br>
+    <input type="email"><br>
+    <input type="password">
+  </article>
+
+  <article id="algoritmo-css">
+    <h2>Algoritmo de CSS</h2>
+    <p>Es la forma en la que CSS aplica los estilos</p>
+    <h4>La Cascada</h4>
+    <p>El último elemento será el que se aplique</p>
+    <h4>Especificidad</h4>
+    <p>Sin importar la especificad aplicará el estilo</p>
+    <ul>
+      <li>!important</li>
+      <li>Estilos en Línea</li>
+      <li>Identificadores</li>
+      <li>Clases, Pseudoclases y Atributos</li>
+      <li>Elementos y Pseudoelementos</li>
+      <h4>!important</h4>
+      <p>Abusar del nivel de especificadad es una mala práctica, así como el !important rompe los niveles de
+        especificidad, pero muchos framaworks la usan</p>
+    </ul>
+    <h4>Herencia</h4>
+    <p>Es la capacidad de los elementos de heredar valores de sus ancestros<br>
+      Se compone de 3 tipos:</p>
+    <ol>
+      <li>Inherit</li>
+      <li>Initial</li>
+      <li>Valores que damos</li>
+      <h4>Ejemplo:</h4>
+      <p class="herencia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore voluptas amet atque assumenda
+        illum nobis quibusdam beatae aliquam, soluta incidunt optio culpa vitae reprehenderit? Dolorem sit quos
+        corrupti. Quis, perferendis.</p>
+    </ol>
+  </article>
+
+  <article id="normalizacion">
+    <h2>Normalización</h2>
+    <ol>
+      <li>Inherit - Background</li>
+      <li>Initial - Font-Size</li>
+      <li>Valor dado - Font-Family</li>
+    </ol>
+    <p>Usamos la librería <cite>Normalizae.css</cite> para reiniciar los estilos or defecto del navegador</p>
+  </article>
+
+  <article id="prefijos-navegadores">
+    <h2>Prefijos de Navegadores</h2>
+    <dl>
+      <dt><b>-ms: </b></dt>
+      <dd>Es el prefijo para Microsoft</dd><br>
+      <dt><b>-moz: </b></dt>
+      <dd>Es el prefijo para Mozilla Firefox</dd><br>
+      <dt><b>-webkit: </b></dt>
+      <dd>Es el prefijo para el resto de los navegadores</dd>
+    </dl>
+  </article>
+
+  <article id="box-model">
+    <h2>Box Model</h2>
+    <h4>Partes del Box Model</h4>
+    <dl>
+      <dt><b>Content: </b></dt>
+      <dd>Es el contenido (el elemento) y se puede modificar con la propiedad: <i
+          style="color:rgb(25, 0, 255);">line-height</i>
+      </dd><br>
+      <dt><b>Padding: </b></dt>
+      <dd>Es el espaciado (divide al contenido del borde) y se puede modificar con la propiedad: <i
+          style="color:rgb(25, 0, 255);">padding</i></dd><br>
+      <dt><b>Border: </b></dt>
+      <dd>Es el borde de la caja y se puede modificar con la propiedad: <i style="color:rgb(25, 0, 255);">border</i>
+      </dd><br>
+      <dt><b>Margin: </b></dt>
+      <dd>Es el margen (el separador y se puede modificar con la propiedad: <i style="color:rgb(25, 0, 255);">margin</i>
+      </dd>
+    </dl>
+    <h4>Imagen del Box Model</h4>
+    <img src="img/box-model.png" alt="Box Model">
+    <h4>Lados de la Caja</h4>
+    <dl>
+      <dt><b>Top: </b></dt>
+      <dd>Arriba</dd><br>
+      <dt><b>Right: </b></dt>
+      <dd>Derecha</dd><br>
+      <dt><b>Bottom: </b></dt>
+      <dd>Abajo</dd><br>
+      <dt><b>Left</b></dt>
+      <dd>Izquierda</dd>
+    </dl>
+  </article>
+
+  <article id="alto-ancho">
+    <h2>Width y Height</h2>
+    <dl>
+      <dt><b>Width</b></dt>
+      <dd>Es el ancho y se aplica con la propiedad: <i style="color: rgb(25, 0, 255);">width</i></dd><br>
+      <dt><b>height</b></dt>
+      <dd>Es el alto de la caja y se define con la propiedad: <i style="color: rgb(25, 0, 255);">height</i></dd>
+    </dl>
+  </article>
+
+  <article id="border">
+    <h2>Border</h2>
+    <p> El borde es una de las propiedades que conforman el modelo de caja</p>
+    <h4>Ejemplo de Bordes</h4>
+    <p class="bordes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorum mollitia delectus ullam!
+      Voluptates exercitationem obcaecati animi. Hic illum quod, molestiae, eos dolor praesentium optio iure laboriosam
+      dolorem possimus nihil!
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, in. Fuga labore sed culpa mollitia et
+      accusantium pariatur animi. Molestiae sit non quasi blanditiis recusandae libero consequatur commodi dignissimos
+      natus!
+    </p><br>
+    <p class="bordes2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus at perspiciatis rem doloremque
+      perferendis numquam modi repellendus, magnam earum, ullam atque dolorem nulla totam quae pariatur! Molestiae
+      expedita optio sapiente.</p>
+  </article>
+
+  <article id="rellenos">
+    <h2>Margin y Padding</h2>
+    <div class="margin">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab unde veniam similique tenetur molestias ea dolorem
+        officia sequi? Fugit ratione nobis facere consequuntur obcaecati cum minima aperiam animi quidem saepe?</p>
+    </div>
+    <div class="padding">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa magni commodi explicabo corrupti harum in quae,
+        enim praesentium fugit sed sint laborum deleniti repellat perspiciatis quo molestias consequatur! Minus, maxime?
+      </p>
+    </div>
+  </article>
+
+  <article id="inline-block">
+    <h2>Elementos en Línea y Elementos en Bloque</h2>
+    <h4>En Línea</h4>
+    <p>Son elementos que se adaptan a su contenido, no aceptan las propiedades de <i
+        style="color: rgb(10, 6, 245);">Width</i> y <i style="color: rgb(10, 6, 245);">Height</i>. tampoco aceptan
+      <b>padding</b> y <b>margin</b> <em><b> verticales</b></em>
+    </p>
+    <h4>En Bloque</h4>
+    <p>Aceptan modificaciones en sus dimensiones</p>
+    <h4>Ejemplo en Línea</h4>
+    <div class="linea">
+      <b>Hola</b>
+      <b>Hola</b>
+      <b>Hola</b>
+    </div>
+    <h4 class="bloque">Ejemplo en Bloque
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque soluta explicabo impedit veniam quam fuga
+        dolor,
+        et omnis eos quia earum perferendis magnam minima ab iusto dolorum praesentium eius. Accusamus!</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor exercitationem error, perferendis cumque
+        debitis
+        quisquam ipsa impedit quod, modi eveniet dolore. Labore temporibus expedita dolores? Voluptates esse nostrum
+        eaque
+        totam.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit debitis aspernatur. Officiis doloribus
+        ratione ipsam fuga dignissimos delectus quibusdam? Provident voluptas accusantium amet quae asperiores tempora
+        consectetur illum impedit?</p>
+    </h4>
+  </article>
+
+  <article id="display">
+    <h2>Display</h2>
+    <p>Es una propiedad que nos permite modificar los comportamientos de los elementos HTML con CSS.</p>
+    <h4>Inline</h4>
+    <div class="inline">
+      <p>Lorem</p>
+      <p>Lorem ipsum</p>
+      <p>Lorem ipsum dolor</p>
+    </div>
+    <h4>Block</h4>
+    <div class="block">
+      <b>Hola</b>
+      <b>Hola</b>
+      <b>Hola</b>
+      <b>Hola</b>
+      <b>Hola</b>
+      <b>Hola</b>
+      <b>Hola</b>
+      <b>Hola</b>
+      <b>Hola</b>
+    </div>
+    <h4>Inline-Block</h4>
+    <div class="inline-block">
+      <b>Negrita 1</b>
+      <b>Negrita 2</b>
+      <b>Negrita 3</b>
+      <b>Negrita 4</b>
+      <b>Negrita 5</b>
+      <b>Negrita 6</b>
+      <b>Negrita 7</b>
+      <b>Negrita 8</b>
+      <b>Negrita 9</b>
+      <b>Negrita 10</b>
+    </div>
+    <h4>None</h4>
+    <div class="none">
+      <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit sint sequi assumenda culpa officia iure
+          distinctio, rerum architecto blanditiis. Debitis incidunt sit tempore, ipsam saepe esse iure ad rem totam!</p>
+      </div>
+    </div>
+    <h4>Table</h4>
+    <table>
+      <tr colspan="3">
+        <th>Display Table</th>
+      </tr>
+      <tr>
+        <td>Hola 1</td>
+        <td>Hola 2</td>
+        <td>Hola 3</td>
+      </tr>
+      <tr>
+        <td>Cosas 1</td>
+        <td>Cosas 2</td>
+        <td>Cosas 3</td>
+      </tr>
+    </table>
+    <h4>List-Item</h4>
+    <ul>
+      <li>Hola 1</li>
+      <li>Hola 2</li>
+      <li>Hola 3</li>
+      <li>Hola 4</li>
+    </ul>
+  </article>
+
+  <article id="visibility">
+    <h2>Visibility</h2>
+    <p>Sirve para ocultar un elemento conservando su espacio.</p>
+    <h4>Hidden</h4>
+    <div class="visibility">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, sit? Dolorem aperiam, expedita assumenda
+        voluptatem dicta reprehenderit laboriosam minus et possimus rem doloribus pariatur cum voluptatum autem placeat,
+        quos quam!</p>
+    </div>
+  </article>
+
+  <article id="overflow">
+    <h2>Overflow</h2>
+    <section class="overflow">
+      <div class="visible">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus excepturi quis sed
+        inventore iure debitis quam sapiente laborum ducimus porro explicabo maiores nulla libero quaerat,
+        exercitationem accusamus! Fugit, nihil distinctio.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vel sed repudiandae voluptatibus voluptates
+        laborum, ipsam impedit officia id dolorum architecto aliquam ea? Quaerat a, quasi inventore quis optio fuga.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium animi, possimus blanditiis vel eaque,
+        facilis commodi quia numquam illum quibusdam odio quod consequatur cumque nihil omnis officia dolores inventore
+        deleniti?
+      </div>
+      <div class="hidden">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente vel ullam atque quisquam porro,
+        repellendus mollitia dolor ipsa corrupti, laboriosam impedit earum reprehenderit unde nisi exercitationem maxime
+        molestiae tenetur.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusantium quo hic at quasi culpa
+        dicta! Distinctio saepe aspernatur natus totam beatae sapiente tempore voluptate possimus, inventore, illum,
+        laudantium unde.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex voluptatum velit fuga delectus rem nulla
+        blanditiis, deserunt provident cupiditate fugiat impedit dolorum fugit omnis consectetur ducimus facere
+        obcaecati natus!
+      </div>
+      <div class="auto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora repudiandae ipsum modi fuga dolore vel aliquam
+        libero et sequi aliquid nemo accusantium incidunt saepe rem, voluptatum enim sed tenetur! Pariatur.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo ullam, odio, culpa porro, mollitia obcaecati ea
+        est nesciunt voluptatem atque nemo quae omnis. Saepe reiciendis hic repellat, doloremque nisi velit!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto perspiciatis hic quisquam, dicta doloremque
+        non quas nulla ducimus vitae, consequuntur numquam suscipit asperiores iste itaque doloribus minima, neque porro
+        saepe?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus eveniet facere! Autem sit minima
+        consectetur animi voluptate eum dolorem, consequuntur dignissimos nam quos! Ea placeat est assumenda quae
+        itaque!
+      </div>
+      <div class=".scroll">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fugiat porro voluptates deleniti vero incidunt
+        error. Obcaecati, minima. Obcaecati reprehenderit sequi, fugit cupiditate nemo dolorem sed quae iure vero
+        voluptates!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ad soluta perspiciatis nulla minus velit similique
+        voluptas voluptate eius? Corporis expedita quae ipsum qui earum quis, aperiam pariatur animi hic?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt provident, eveniet ea dicta ab perferendis qui
+        facilis harum facere? Veritatis magnam maxime nesciunt voluptates, nam aliquid dignissimos vel repudiandae fuga.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt vero sapiente cum dolorum iure fugit
+        voluptatem odio repudiandae facilis. Delectus voluptatem sint temporibus corporis dolorem beatae recusandae
+        fugit dicta!
+      </div>
+      <div class="overflow-y">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sapiente numquam repellat iure repudiandae
+        magnam deserunt voluptatem saepe perferendis doloremque molestiae temporibus rem labore, inventore atque
+        assumenda expedita vitae nesciunt.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad cum rerum maiores et, fugit voluptatum magni
+        blanditiis, amet, praesentium dicta recusandae explicabo! Ipsa reiciendis eum quis debitis voluptate, sapiente
+        nemo.
+      </div>
+      <div class="overflow-x">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis ullam dolore adipisci! Sint expedita quam
+        reiciendis ad quibusdam, deleniti ratione. Culpa itaque sint reprehenderit ea explicabo aut omnis illo sequi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At corporis, officiis ab facere repudiandae obcaecati
+        quam velit. Reprehenderit, quia. Modi deleniti quasi nemo hic sit quaerat? Libero animi in at.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam optio consequatur rem blanditiis reprehenderit
+        molestias eligendi vitae, reiciendis voluptate assumenda cupiditate natus hic, consequuntur adipisci soluta
+        perspiciatis tempora sequi qui.
+      </div>
+      <div class="overflow-y-hidden">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium impedit aliquam consequuntur natus eligendi
+        ipsum? Rerum sapiente numquam autem quidem earum, reprehenderit quae. Natus minus numquam sint nesciunt eos
+        nulla.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt vel laboriosam laborum aliquid repellat
+        pariatur, blanditiis, excepturi ipsum adipisci possimus quaerat. Sed molestiae sit unde quia eligendi, sint
+        molestias eos.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto perferendis similique ipsam labore voluptatibus
+        atque at, veritatis officia repellat doloremque, natus dolores quam exercitationem ratione ex velit dolor
+        suscipit libero!
+      </div>
+      <div class="overflow-x-hidden">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos illo veniam reiciendis similique, non perferendis
+        ipsa? At itaque veritatis asperiores ea praesentium impedit a perferendis? Officiis, impedit? Officia, non sint?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A temporibus voluptatem corporis qui vel nostrum.
+        Beatae asperiores unde ab tempore, repellendus totam quisquam obcaecati qui nostrum deleniti id animi quibusdam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, repellat accusantium! Vitae beatae
+        ducimus quos ipsum eveniet sint exercitationem, nobis laboriosam nihil quis quo harum minima, veritatis
+        quibusdam, voluptas ad.
+      </div>
+    </section>
+  </article>
+
+  <article id="box-sizing">
+    <h2>Box Sizing</h2>
+    <div class="modelo-caja">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et consequatur ad aliquid quo iusto modi
+        accusantium perspiciatis nam ea minima asperiores repellendus quod quos, magni quasi temporibus, officiis
+        quaerat!
+      </div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis porro dolorem asperiores officiis quaerat
+        soluta, ipsum unde nam tempore necessitatibus numquam quasi modi nemo. Aliquam harum quis odio repellat
+        laudantium.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos totam exercitationem nemo tenetur animi dolores
+        sint esse. Quia consequatur deserunt consequuntur, explicabo dolores, repellat asperiores voluptatum velit ad
+        molestiae sit.</div>
+    </div>
+  </article>
+  <article id="float-clear">
+    <h2>Float & Clear</h2>
+    <h4>Left</h4>
+    <div class="float">
+      <div>Hola 1</div>
+      <div>Hola 2</div>
+      <div>Hola 3</div>
+    </div>
+    <h4>Right</h4>
+    <div class="float-2">
+      <div>Hola 1</div>
+      <div>Hola 2</div>
+      <div>Hola 3</div>
+    </div>
+    <h4>Clear Left</h4>
+    <div class="clear">
+      <p>Lorem 1</p>
+      <p>Lorem 2</p>
+      <p>Lorem 3</p>
+    </div>
+    <div class="clear-2">
+      <p>Lorem 1</p>
+      <p>Lorem 2</p>
+      <p>Lorem 3</p>
+    </div>
+  </article>
+
+  <article id="colapso-margenes">
+    <h2>Colapso de Márgenes Verticales</h2>
+    <div class="mismo-valor">
+      <div>10px</div>
+      <div>10px</div>
+    </div>
+    <div class="valor-mayor">
+      <div>50px</div>
+      <div>20px</div>
+    </div>
+    <div class="abajo-tapa-arriba">
+      <div>50px</div>
+      <div>-20px</div>
+    </div>
+    <div class="resta-mayor">
+      <div>20px</div>
+      <div>50px</div>
+    </div>
+  </article>
+
+  <article id="margenes-verticales">
+    <h2>Márgenes Verticales</h2>
+    <div class="vert">
+      <div>Hola 1</div>
+      <div>Hola 2</div>
+    </div>
+  </article>
+
+  <article id="centrado-cajas">
+    <h2>Centrado de Cajas</h2>
+    <div class="centrado">
+      <div>Bloque 1</div>
+    </div>
+  </article>
+  <br><br><br><br><br>
+  <a href="index.html#temario">☝️</a>
+
+
+</body>
+
+</html>

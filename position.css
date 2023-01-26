@@ -1,0 +1,196 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:not(h1, h2, h3, h4) {
+  font-size: 1em;
+}
+
+* {
+  font-family: cursive;
+}
+
+h1 {
+  color: rgb(2, 18, 245);
+  margin: 0 10px 0 10px;
+}
+
+h2 {
+  color: rgb(128, 19, 172);
+  margin: 0 10px 0 10px;
+}
+
+h3 {
+  color: rgb(231, 5, 5);
+  margin: 0 10px;
+}
+
+h4 {
+  color: rgb(53, 189, 0);
+  margin: 0 10px;
+}
+
+p {
+  margin: 0 10px;
+}
+
+div {
+  margin: 0 10px;
+}
+
+ul,
+li {
+  margin: 0 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mt-100 {
+  margin-top: 50px;
+}
+
+.static {
+  position: static;
+  height: 100px;
+  width: 100px;
+  line-height: 42px;
+  text-align: center;
+  background-color: lightblue;
+  border: medium solid #000;
+}
+
+.relative {
+  background-color: lightslategray;
+  border: medium solid #000;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.relative > div {
+  position: relative;
+  display: inline-block;
+  background-color: mediumaquamarine;
+  border: medium solid #000;
+  left: 100px;
+  top: 100px;
+  width: 120px;
+  height: 120px;
+}
+
+.relative div:last-child {
+  z-index: 998;
+}
+
+.box-relative {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  line-height: 42px;
+  text-align: center;
+  background-color: lightblue;
+  border: medium solid #000;
+  left: 50px;
+  top: 30px;
+}
+
+.absolute {
+  background-color: rgb(140, 243, 180);
+  border: medium solid #000;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+}
+
+.absolute > div {
+  position: absolute;
+  background-color: rgb(181, 102, 205);
+  border: medium solid #000;
+  top: 0;
+  bottom: 0;
+}
+
+.box-absolute > div {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  line-height: 42px;
+  text-align: center;
+  background-color: rgb(156, 8, 255);
+  border: medium solid #000;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.fixed {
+  background-color: rgb(243, 198, 140);
+  border: medium solid #000;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+}
+
+.fixed > div {
+  position: fixed;
+  background-color: rgb(16, 79, 253);
+  border: medium solid #000;
+  width: 100px;
+  height: 100px;
+  left: 100px;
+  top: 200px;
+}
+
+.box-fixed > div {
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  line-height: 42px;
+  text-align: center;
+  background-color: rgb(160, 255, 8);
+  border: medium solid #000;
+  left: 0;
+  bottom: 0;
+}
+
+.sticky {
+  background-color: rgb(29, 223, 213);
+  border: medium solid #000;
+  width: 400px;
+  height: 300px;
+  margin: auto;
+}
+
+.sticky > div {
+  position: sticky;
+  background-color: rgb(210, 253, 16);
+  border: medium solid #000;
+  height: 100px;
+  left: 100px;
+  top: 200px;
+}
+
+.box-sticky {
+  position: sticky;
+  height: 100px;
+  line-height: 42px;
+  text-align: center;
+  background-color: rgb(115, 8, 255);
+  border: medium solid #000;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.margenes {
+  background-color: darkkhaki;
+  margin-bottom: -1000px;
+}

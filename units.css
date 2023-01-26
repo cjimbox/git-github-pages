@@ -1,0 +1,119 @@
+:root {
+  font-size: 16px;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightseagreen;
+  margin: 0;
+  padding: 0;
+}
+
+*:not(body) {
+  margin-left: 1rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+.pixeles {
+  background-color: lawngreen;
+  border: thick solid #000;
+  font-size: 1rem;
+  width: 50rem;
+  height: 20rem;
+}
+
+.em {
+  font-size: 16px;
+  background-color: lightskyblue;
+  width: 30em;
+  height: 80%;
+  border: thick dashed #000;
+}
+
+.em > .em-hijo {
+  border: thick solid #000;
+  background-color: #0bd;
+  width: 3em;
+  height: 70%;
+}
+
+.rem {
+  background-color: silver;
+  border: thick solid #000;
+  width: 10rem;
+  height: 10rem;
+}
+
+.ex {
+  background-color: teal;
+  border: thick solid #000;
+  font-size: 18px;
+  width: 40ex;
+  height: 40ex;
+}
+
+.ch {
+  box-sizing: content-box;
+  background-color: violet;
+  border: thick solid currentColor;
+  font-size: 10px;
+  width: 20ch;
+  height: 40ch;
+}
+
+.porcentage {
+  background-color: mediumspringgreen;
+  border: thick solid #000;
+  width: 100%;
+  height: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 50%;
+  background-color: darkslateblue;
+  border: thick solid currentColor;
+  height: 50vh;
+}
+
+.container > .child {
+  margin-left: 0;
+  width: 50%;
+  height: 70%;
+  border: thick solid currentColor;
+  background-color: lightslategrey;
+}
+
+.viewport {
+  background-color: peru;
+  border: thick solid currentColor;
+  width: 100%;
+  height: 50vh;
+  margin: 0;
+  padding: 0;
+}
+
+.vmin-vmax {
+  background-color: cyan;
+  border: thick solid currentColor;
+  width: vmin;
+  height: vmax;
+}

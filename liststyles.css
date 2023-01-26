@@ -1,0 +1,44 @@
+.list-1 {
+  list-style-type: none;
+}
+
+.image {
+  width: 1rem;
+  height: 1rem;
+}
+
+/*Viñetas de Listas con Imágens*/
+.list-2 {
+  list-style-image: url("assets/squirrel-svgrepo-com.svg");
+  list-style-type: none;
+}
+
+.list-2 li::before {
+  content: "";
+  display: inline-block;
+  background-image: url("assets/squirrel-svgrepo-com.svg");
+  background-size: contain contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.list-3 li {
+  background-color: khaki;
+}
+
+.list-3 {
+  list-style: inside url("assets/squirrel-svgrepo-com.svg") inside;
+}
+
+.list-4 {
+  width: 800px;
+  list-style-type: none;
+  column-count: 3;
+  column-gap: 100px;
+  column-rule: medium dotted #f00;
+  column-width: 140px;
+}
+
+.list-4 li {
+  background-color: khaki;
+}

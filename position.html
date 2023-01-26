@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posicionamiento CSS</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="position.css">
+  <link rel="icon" href="assets/squirrel-svgrepo-com.svg">
+</head>
+
+<body>
+  <div class="box-sticky">Caja Pegajosa 2</div>
+  <h1>Posicionamiento CSS</h1>
+  <article id="static">
+    <h2>Position Static</h2>
+    <p>Que no esta posicionado</p>
+    <div class="static">Caja Estática</div>
+  </article>
+
+  <article id="relative">
+    <h2>Position Relative</h2>
+    <h3>Caracteristícas</h3>
+    <ol>
+      <li>Conserva sus dimensiones</li>
+      <li>Conserva su posición original</li>
+    </ol>
+    <h4>Con Contenedor</h4>
+    <div class="relative">
+      <div>Caja Relativa</div>
+      <div>Caja Relativa 2</div>
+      <div>Caja Relativa 3</div>
+    </div>
+    <h4>En el Viewport</h4>
+    <div class="box-relative">
+      <div>Caja Relativa 2</div>
+    </div>
+  </article>
+
+  <article id="absolute">
+    <h2 class="mt-100">Position Absolute</h2>
+    <h3>Caracteristícas</h3>
+    <ol>
+      <li>Pierde sus dimensiones</li>
+      <li>Se posiciona respecto al viewport</li>
+      <li>Se posiciona a un contenedor si es hijo directo y su contenedor es relativo</li>
+    </ol>
+    <h4>Con Contenedor</h4>
+    <div class="absolute">
+      <div>Caja Absoluta</div>
+    </div>
+    <h4>En el Viewport</h4>
+    <div class="box-absolute">
+      <div>Caja Absoluta 2</div>
+
+      <a href="https://w3schools.com" rel="noopener nofollow noreferrer">w3schools</a>
+
+    </div>
+  </article>
+
+  <article id="fixed">
+    <h2>Position Fixed</h2>
+    <h3>Caracteristícas</h3>
+    <ol>
+      <li>Pierde sus dimensiones</li>
+      <li>Se posiciona respecto al viewport</li>
+      <li>Se queda fijo</li>
+    </ol>
+    <h4>Con Contenedor</h4>
+    <div class="fixed">
+      <div>Caja Fija</div>
+    </div>
+    <h4>En el Viewport</h4>
+    <div class="box-fixed">
+      <div>Caja Fija 2</div>
+    </div>
+  </article>
+
+  <article id="sticky">
+    <h2>Position Sticky</h2>
+    <h3>Caracteristícas</h3>
+    <ol>
+      <li>Es una combinación de fijo y relativo</li>
+      <li>Se posiciona respecto al contenedor del cual sea hijo directo</li>
+      <li>Se posiciona a un contenedor si este tiene dimensiones definidas</li>
+      <li>Es pegajoso mientras su contenedor sea visible</li>
+    </ol>
+    <h4>Con Contenedor</h4>
+    <div class="sticky">
+      <div>Caja Pegajosa</div>
+    </div>
+    <h4>En el Viewport</h4>
+  </article>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <article id="negativos">
+    <h2>Márgenes Negativos</h2>
+    <div class="margenes">Lorem</div>
+  </article>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

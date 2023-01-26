@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  width: 20%;
+  height: 30vh;
+  display: block;
+}
+
+.animation-1 {
+  animation-name: animacion-1;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.2s;
+  animation-iteration-count: 3;
+  animation-iteration-count: 2;
+  animation-direction: normal;
+  animation-direction: reverse;
+  animation-direction: alternate;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: none;
+  animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+  animation-play-state: running;
+}
+
+.animation-2 {
+  animation: animacion-2 3s ease-in-out 1s 7 alternate both running;
+}
+
+@keyframes animacion-1 {
+  from {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(20rem);
+  }
+}
+
+@keyframes animacion-2 {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(80vw);
+  }
+}
+
+.animation-3 {
+  animation: animation-3 3s ease-in-out 0.1s 3 alternate both running;
+}
+
+@keyframes animation-3 {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animation-4 {
+  animation: animation-1 2s ease-in-out, animation-2 3s ease,
+    animation-3 4s linear;
+}
+
+#button {
+  pointer-events: auto;
+}
+
